@@ -30,3 +30,4 @@ setBtn.addEventListener("click", function () {
 // reset vide le champs et remet le compteur a zero
 
 // TODO 3: faire sans la variable count
+// TODO 4: faire le style CSS
