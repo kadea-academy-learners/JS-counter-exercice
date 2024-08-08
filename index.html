@@ -8,25 +8,23 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>JavaScript Counter App</h1>
+    <div class="app">
+      <h1 class="app__title">JavaScript Counter App</h1>
 
-      <div class="counter_container">
-        <div>
-          <button id="substractBtn">-</button>
+      <div class="counter">
+        <button class="counter__button counter__button--substract">-</button>
+        <div class="counter__display-container">
+          <h2 class="counter__display" id="counterValue">0</h2>
         </div>
-        <div id="counter_area">
-          <h2 class="counter_display" id="counterValue">0</h2>
-        </div>
-        <div>
-          <button id="addBtn">+</button>
-        </div>
+        <button class="counter__button counter__button--add">+</button>
       </div>
 
-      <div id="form_container">
-        <input type="number" />
-        <button>Reset</button>
-        <button>Set</button>
+      <div class="form">
+        <input type="number" class="form__input" />
+        <div class="form__actions">
+          <button class="form__button form__button--reset">Reset</button>
+          <button class="form__button form__button--set">Set</button>
+        </div>
       </div>
     </div>
 

@@ -1,18 +1,86 @@
-.container {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.counter_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.app__title {
+  margin-bottom: 1.5rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.counter__button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: monospace;
+  transition: 300ms;
+  font-size: 2.5rem;
+  padding: 8px 8px;
+}
+
+.counter__button--substract:hover,
+.counter__button--add:hover {
+  color: #05ad05;
+}
+
+.counter__display-container {
+  padding: 0 8px;
+}
+
+.counter__display {
+  font-size: 2.5rem;
+  background-color: #05ad05;
+  color: white;
+  padding: 2px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.form__input {
+  padding: 6px 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid #05ad05;
+  border-radius: 4px;
+  max-width: 164px;
+}
+
+.form__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.form__button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: 2px solid #05ad05;
+  border-radius: 4px;
+  padding: 4px 10px;
+  transition: 300ms;
+}
+
+.form__button:hover {
+  background-color: #05ad05;
+  color: #fff;
 }

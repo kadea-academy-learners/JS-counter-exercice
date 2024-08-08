@@ -1,33 +1,31 @@
-const substractBtn = document.getElementById("substractBtn");
-const addBtn = document.getElementById("addBtn");
+const substractBtn = document.querySelector(".counter__button--substract");
+const addBtn = document.querySelector(".counter__button--add");
 const counterDisplay = document.getElementById("counterValue");
-const counteArea = document.getElementById("counter_area");
-const setBtn = document.getElementById("form_container").lastElementChild;
-const input = document.getElementById("form_container").firstElementChild;
+const setBtn = document.querySelector(".form__button--set");
+const resetBtn = document.querySelector(".form__button--reset");
+const input = document.querySelector(".form__input");
 
-let count = Number(counterDisplay.innerText);
-
-substractBtn.addEventListener("click", function decrement() {
-  count = count - 1;
-  counterDisplay.innerText = count;
+substractBtn.addEventListener("click", () => {
+  let currentValue = parseInt(counterDisplay.innerText);
+  counterDisplay.innerText = currentValue - 1;
 });
 
-addBtn.addEventListener("click", function increment() {
-  count++;
-  counterDisplay.innerText = count;
+addBtn.addEventListener("click", () => {
+  let currentValue = parseInt(counterDisplay.innerText);
+  counterDisplay.innerText = currentValue + 1;
 });
 
-setBtn.addEventListener("click", function () {
-  //prendre la valeur de l'input
-  let inputValue = input.value;
-  //assigner la valeur au DisplayContainer
-  count = inputValue;
-  counterDisplay.innerText = count;
-  //   TODO 1: vider le champs apres le clic
+setBtn.addEventListener("click", () => {
+  let inputValue = parseInt(input.value);
+  if (!isNaN(inputValue)) {
+    counterDisplay.innerText = inputValue;
+    input.value = "";
+  } else {
+    alert("Entrez un nombre correct !");
+  }
 });
 
-// TODO 2: add reset function
-// reset vide le champs et remet le compteur a zero
-
-// TODO 3: faire sans la variable count
-// TODO 4: faire le style CSS
+resetBtn.addEventListener("click", () => {
+  counterDisplay.innerText = 0;
+  input.value = "";
+});
