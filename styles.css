@@ -1,6 +1,6 @@
 .container {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f1fcfc;
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,4 +15,45 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+h2{
+    border-right: 1px solid white;
+    padding: 5px 15px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 1px;
+    grid-column: span 1;
+}
+button:hover{
+    color: green;
+    border: 1px solid rgb(214, 238, 203);
+    box-shadow: 1px 2px 30px rgb(230, 247, 225);
+    margin: 0;
+    border-radius: 5px;
+}
+#form_container{
+    display: flex;
+    gap: 10px;
+}
+input{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px ;
+    border-color: green;
+    text-align: center;
+    background-color: transparent;
+    font-weight: 700;
+    color: green;
+}
+
+input:focus{
+    box-shadow: 1px 2px 30px rgb(230, 247, 225);
 }

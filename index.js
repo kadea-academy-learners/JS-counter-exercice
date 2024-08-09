@@ -3,31 +3,36 @@ const addBtn = document.getElementById("addBtn");
 const counterDisplay = document.getElementById("counterValue");
 const counteArea = document.getElementById("counter_area");
 const setBtn = document.getElementById("form_container").lastElementChild;
+const reSet = document.getElementsByTagName('button')[2]
 const input = document.getElementById("form_container").firstElementChild;
 
-let count = Number(counterDisplay.innerText);
+
 
 substractBtn.addEventListener("click", function decrement() {
-  count = count - 1;
-  counterDisplay.innerText = count;
+  counterDisplay.innerText = Number(counterDisplay.innerText)-1;
 });
 
 addBtn.addEventListener("click", function increment() {
-  count++;
-  counterDisplay.innerText = count;
+  counterDisplay.innerText = Number(counterDisplay.innerText)+1;
 });
 
 setBtn.addEventListener("click", function () {
   //prendre la valeur de l'input
-  let inputValue = input.value;
   //assigner la valeur au DisplayContainer
-  count = inputValue;
-  counterDisplay.innerText = count;
+  if(input.value=='') counterDisplay.innerText
+  else counterDisplay.innerText = input.value;
+  input.value=''
   //   TODO 1: vider le champs apres le clic
 });
 
+
+
 // TODO 2: add reset function
 // reset vide le champs et remet le compteur a zero
+reSet.addEventListener('click', ()=>{
+  input.value=''
+  counterDisplay.innerText='0'
+})
 
 // TODO 3: faire sans la variable count
 // TODO 4: faire le style CSS
