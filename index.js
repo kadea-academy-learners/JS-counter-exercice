@@ -8,8 +8,7 @@ const reset = document.getElementById("resetBtn");
 
 
 substractBtn.addEventListener("click", function decrement() {
-
-  counterDisplay.innerText = Number(counterDisplay.innerText) - 1;
+  counterDisplay.innerText = (counterDisplay.innerText) - 1;
 });
 
 addBtn.addEventListener("click", function increment() {

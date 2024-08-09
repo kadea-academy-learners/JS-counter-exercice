@@ -17,9 +17,9 @@
     gap: 5px;
 }
 h2{
-    background-color: rgb(37, 223, 37);
-    border-radius: 5px;
-    padding: 7px;
+    background-color: rgb(247, 10, 10);
+    border-radius: 20px;
+    padding: 15px;
 
 }
 .counter_button{
@@ -38,15 +38,15 @@ h2{
 }
 .button_input{
     margin:5px ;
-    padding :5px ;
-    border: 1px solid #000000;
+    padding :10px ;
+    border: 1px solid #0b07f8;
     border-radius: 20px;
     font-size: medium;
     font-weight: bold;
 }
 input{
-    background-color: #f4f4f4;
-    border:1px solid #000000;
+    background-color: #e9eeea;
+    border:1px solid #5107fd;
     border-radius: 10px;
     margin: 5px;
 }
