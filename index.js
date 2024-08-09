@@ -6,24 +6,21 @@ const setBtn = document.getElementById("form_container").lastElementChild;
 const input = document.getElementById("form_container").firstElementChild;
 const reset = document.getElementById("resetBtn");
 
-let count = Number(counterDisplay.innerText);
 
 substractBtn.addEventListener("click", function decrement() {
-  count = count - 1;
-  counterDisplay.innerText = count;
+
+  counterDisplay.innerText = Number(counterDisplay.innerText) - 1;
 });
 
 addBtn.addEventListener("click", function increment() {
-  count++;
-  counterDisplay.innerText = count;
+  counterDisplay.innerText = Number(counterDisplay.innerText) + 1;
 });
 
 setBtn.addEventListener("click", function () {
   //prendre la valeur de l'input
   let inputValue = input.value;
   //assigner la valeur au DisplayContainer
-  count = inputValue;
-  counterDisplay.innerText = count;
+  counterDisplay.innerText = input.value;
   //   TODO 1: vider le champs apres le clic
   input.value = "";
 });
