@@ -7,46 +7,44 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
     height: 100vh;
 }
 
 .counter_container{
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
-h2{
-    background-color: rgb(37, 223, 37);
-    border-radius: 5px;
-    padding: 7px;
+
+.counter_button{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.counter_display{
+    background: rgb(52, 209, 52);
+    width:fit-content;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 2.5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
-.counter_button{
-    background-color: #f4f4f4;
-    border:none;
-    color: black;
-    padding: 10px 20px;
-    font-size: 24px;
-    cursor: pointer;
-    outline: none;
+
+#substractBtn, #addBtn{
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;  
 }
-.form_container{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-}
-.button_input{
-    margin:5px ;
-    padding :5px ;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    font-size: medium;
-    font-weight: bold;
-}
-input{
-    background-color: #f4f4f4;
-    border:1px solid #000000;
-    border-radius: 10px;
-    margin: 5px;
+
+#form_container{
+    margin-top: 5%;
 }
