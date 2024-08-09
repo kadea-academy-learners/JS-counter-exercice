@@ -32,5 +32,3 @@ reset.addEventListener("click",function reset(){
   counterDisplay.innerText = 0 ;
 
 })
-// TODO 3: faire sans la variable count
-// TODO 4: faire le style CSS
