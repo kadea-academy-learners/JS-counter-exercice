@@ -14,39 +14,72 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
 }
-h2{
-    background-color: rgb(37, 223, 37);
-    border-radius: 5px;
-    padding: 7px;
+
+#counter_area{
+    display: flex;
+    background-color: rgb(71, 198, 54);
+    border-color: rgb(71, 198, 54);
+    border-radius: 5%;
+    width: 60px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+#form_container{
+    display: flex;
+    height: 15px;
+    width: 30px;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#rest{
+    display: flex;
+    background-color: rgb(192, 59, 59);
+    border-color: rgb(192, 59, 59);
+    width: 50px;
+    height: 30px;
+    border-radius: 5%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
 
 }
-.counter_button{
-    background-color: #f4f4f4;
-    border:none;
-    color: black;
-    padding: 10px 20px;
-    font-size: 24px;
-    cursor: pointer;
-    outline: none;
-}
-.form_container{
+#st{
     display: flex;
+    width: 50px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(71, 198, 54);
+    border-color: rgb(38, 209, 15);
+    border-radius: 5%;
+    font-size: 15px;
+    
+}
+#contener{
+    display: flex;
+    gap: 50px;
     flex-direction: column;
-    gap:20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
 }
-.button_input{
-    margin:5px ;
-    padding :5px ;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    font-size: medium;
-    font-weight: bold;
+#substractBtn{
+    border: none;
+    font-size: 30px;
+
+
 }
-input{
-    background-color: #f4f4f4;
-    border:1px solid #000000;
-    border-radius: 10px;
-    margin: 5px;
+#addBtn{
+    border: none;
+    font-size: 30px;
 }

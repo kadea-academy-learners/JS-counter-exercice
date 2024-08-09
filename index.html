@@ -2,32 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div id="contnr" class="container">
       <h1>JavaScript Counter App</h1>
-
+      <div id="contener">
       <div class="counter_container">
-        <div >
-          <button id="substractBtn" class="counter_button">-</button>
+        <div>
+          <button id="substractBtn">-</button>
         </div>
         <div id="counter_area">
           <h2 class="counter_display" id="counterValue">0</h2>
         </div>
-        <div >
-          <button id="addBtn" class="counter_button">+</button>
+        <div>
+          <button id="addBtn">+</button>
+
+
         </div>
       </div>
 
-      <div id="form_container" class="form_container">
-        <input type="number"/>
-        <button id="resetBtn" class="button_input">Reset</button>
-        <button class="button_input">Set</button>
+      <div id="form_container">
+        <input type="number" />
+        <button id="rest" type="button" onclick="resetForm()">Reset</button>
+        <button id="st">Set</button>
       </div>
+    </div>
     </div>
 
     <script src="index.js"></script>
