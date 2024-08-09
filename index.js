@@ -27,7 +27,19 @@ setBtn.addEventListener("click", function () {
 });
 
 // TODO 2: add reset function
-// reset vide le champs et remet le compteur a zero
+function resetForm() {
+  // Réinitialiser la valeur du compteur à 0
+  counterValue.textContent = 0;
 
-// TODO 3: faire sans la variable count
-// TODO 4: faire le style CSS
+  // Vider le champ de saisie
+  input.value = "";
+}
+
+// Ajouter les écouteurs d'événements pour les boutons
+document.getElementById("substractBtn").addEventListener("click", () => {
+  // Implémentation du code pour le bouton "-"
+});
+
+document.getElementById("addBtn").addEventListener("click", () => {
+  // Implémentation du code pour le bouton "+"
+});
