@@ -19,6 +19,7 @@
 h2{
     background-color: rgb(37, 223, 37);
     border-radius: 5px;
+    color:#f4f4f4;
     padding: 7px;
 
 }
@@ -33,7 +34,7 @@ h2{
 }
 .form_container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:20px;
 }
 .button_input{
